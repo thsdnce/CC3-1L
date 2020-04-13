@@ -1,0 +1,39 @@
+package happyface;
+
+import java.awt.*;
+import javax.swing.JFrame;
+
+public class HappyFace0 extends Panel {
+    public HappyFace0 (){
+        this.setBackground(Color.BLACK);
+        
+    }
+    @Override
+        public void paint(Graphics u){
+        u.setColor (Color.YELLOW);
+        u.fillOval(127,10,240,240);
+        u.setColor (Color.BLACK);
+        u.fillOval(175,50, 50, 50);
+        u.fillOval(270,50,50,50);
+        u.setColor (Color.RED);
+        int x []= {250,220,280};
+        int y []= {100, 150, 150};
+        u.fillPolygon(x, y, 3);
+        u.setColor(Color.BLACK);
+        u.fillArc(200, 125, 100, 100, 180, 180);
+
+
+        }
+    public static void main(String[] args) {
+        JFrame frame = new JFrame();
+        frame.setTitle("Happy Face");
+        HappyFace0 panel = new HappyFace0();
+        frame.add(panel);
+        frame.setSize(600, 400);
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+    }
+
+    
+}

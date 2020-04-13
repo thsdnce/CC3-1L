@@ -1,0 +1,25 @@
+package intarray;
+import java.util.*;
+public class IntArray {
+    
+    public static void main(String[] args) {
+        int []array = new int[5];
+        java.util.Scanner sc = new java.util.Scanner(System.in);
+        for (int i = 0; i < array.length; i++) {
+        System.out.print("Enter an Integer: ");
+        array[i] = sc.nextInt();
+        
+        }
+        System.out.print("First to Last:");
+        for(int i = 0; i < array.length; i++) {
+        Arrays.sort(array); 
+        System.out.print(" "+array[i]);
+        }
+        System.out.println("");
+        System.out.print("Last to First:");
+        for(int i = array.length - 1; i >= 0; i--){
+        System.out.print( " " +array[i]);        
+        }   
+        System.out.println("");
+    }    
+}

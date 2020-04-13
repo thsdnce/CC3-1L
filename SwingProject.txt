@@ -1,0 +1,64 @@
+package swingproject;
+import java.awt.FlowLayout;
+import java.awt.Font;
+import java.awt.Label;
+import javax.swing.*;
+public class SwingProject {
+
+   
+    public static void main(String[] args) {
+        Font headLineFont = new Font("Arial", Font.BOLD,16);
+        JFrame aFrame = new JFrame("First Name");
+        aFrame. setSize(550, 150);
+        aFrame.setVisible(true);
+        aFrame.setResizable(true);
+        aFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);       
+        JFrame.setDefaultLookAndFeelDecorated(true);
+        
+        JLabel Label1 = new JLabel("University of the Cordilleras");
+        Label1.setFont(headLineFont);
+        aFrame.add(Label1);
+        
+        JLabel Label2 = new JLabel("College of Information Technology and Computer Science");
+        Label2.setFont(headLineFont);
+        aFrame.add(Label2);
+        
+        
+        
+        JButton b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12;
+b1 = new JButton("1");
+b2 = new JButton("2");
+b3 = new JButton("3");
+b4 = new JButton("4");
+b5 = new JButton("5");
+b6 = new JButton("6");
+b7 = new JButton("7");
+b8 = new JButton("8");
+b9 = new JButton("9");
+b10 = new JButton("10");
+b11 = new JButton("11");
+b12 = new JButton("12");
+
+aFrame.add(b1);
+
+aFrame.add(b2);
+aFrame.add(b3);
+aFrame.add(b4);
+aFrame.add(b5);
+aFrame.add(b6);
+aFrame.add(b7);
+aFrame.add(b8);
+aFrame.add(b9);
+aFrame.add(b10);
+aFrame.add(b11);
+aFrame.add(b12);
+aFrame.setLayout(new FlowLayout());
+aFrame.setLayout(new FlowLayout(FlowLayout.CENTER,10,20));
+       
+        
+        
+        
+        
+    }
+    
+}
